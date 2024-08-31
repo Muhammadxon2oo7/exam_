@@ -1,17 +1,20 @@
-.fourth__section{
+.fourth__section {
     width: 100%;
     padding-top: 80px;
-    .container{
+
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: auto;
-        .card{
+
+        .card {
             padding: 10px;
             border-radius: 12px;
             transition: 0.5s;
             height: 100%;
-            .img__Wrapper{
-                @include flex(center,center,0px);
+
+            .img__Wrapper {
+                @include flex(center, center, 0px);
                 width: 106px;
                 height: 106px;
                 border-radius: 100%;
@@ -19,41 +22,48 @@
                 margin: 0 auto;
                 margin-bottom: 33px;
             }
-            .contanet{
+
+            .contanet {
                 width: 100%;
-                h3{
+
+                h3 {
                     cursor: pointer;
-                    @include text($dec,700,18px,$tcolor,center,16px);
+                    @include text($dec, 700, 18px, $tcolor, center, 16px);
                 }
-                p{
+
+                p {
                     @include dec()
                 }
             }
-            &:not(:last-child){
+
+            &:not(:last-child) {
                 margin-bottom: 48px;
             }
-            &:hover{
+
+            &:hover {
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
         }
     }
 }
 
-@media only screen and (min-width:768px){
-    .fourth__section{
-        .container{
+@media only screen and (min-width:768px) {
+    .fourth__section {
+        .container {
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 10px;
-            .card{
+
+            .card {
                 margin-bottom: 0;
             }
         }
     }
 }
-@media only screen and (min-width:992px){
-    .fourth__section{
-        .container{
+
+@media only screen and (min-width:992px) {
+    .fourth__section {
+        .container {
             gap: 30px;
         }
     }

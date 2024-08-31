@@ -1,59 +1,53 @@
-*,*::after,::before{
+*,
+*::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-*::selection{
+
+*::selection {
     background-color: $btn;
     color: $white;
 }
-body{
+
+body {
     font-family: "Public Sans", sans-serif;
     background-color: #Ecf3f8;
-    
+
 }
 
-.main{
+.main {
     position: relative;
     width: 100%;
     background-image: url('../img/main/mobile__main.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    // background-size: cover;
-    // &::before{
-    //     content: "";
-    //     position: absolute;
-    //     right: 0;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 10;
-    //     background-image: url('../img/main/mobile__main.svg');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     // transform: rotateX(450deg);
-    // }
 }
 
-ul,ol,li{
+ul,
+ol,
+li {
     list-style: none;
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     max-width: 1110px;
     padding-left: 24px;
     padding-right: 24px;
     margin: 0 auto;
 }
 
-@media only screen and (min-width:992px){
-    .main{
+@media only screen and (min-width:992px) {
+    .main {
         background-image: url('../img/main/tablet__main.svg');
         background-size: unset;
-        background-position:top right;
+        background-position: top right;
     }
 }

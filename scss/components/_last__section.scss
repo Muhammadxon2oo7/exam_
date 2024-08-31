@@ -1,16 +1,20 @@
-.last__section{
+.last__section {
     width: 100%;
     padding-top: 80px;
-    .container{
+
+    .container {
         width: 100%;
-        h2{
-            @include text($title,400,32px,$tcolor,center,24px);
+
+        h2 {
+            @include text($title, 400, 32px, $tcolor, center, 24px);
         }
-        form{
+
+        form {
             width: 327px;
-            margin: 0 auto; 
+            margin: 0 auto;
             margin-bottom: 24px;
-            input{
+
+            input {
                 border-radius: 24px;
                 width: 100%;
                 height: 48px;
@@ -21,45 +25,53 @@
                 outline: none;
                 border: none;
                 padding-left: 27px;
-                &::placeholder{
+
+                &::placeholder {
                     @include dec();
                     font-weight: 700;
                     text-align: unset;
                     color: #99a7b4;
                 }
             }
-            button{
-                @include btn(100%,48px,$btn,24px);
-                @include text($dec,700,15px,$white,center,0px)
+
+            button {
+                @include btn(100%, 48px, $btn, 24px);
+                @include text($dec, 700, 15px, $white, center, 0px)
             }
         }
     }
 }
-@media only screen and (min-width:768px){
-    .last__section{
+
+@media only screen and (min-width:768px) {
+    .last__section {
         padding-top: 48px;
-        .container{
+
+        .container {
             width: 100%;
-            h2{
+
+            h2 {
                 font-size: 48px;
             }
-            form{
+
+            form {
                 width: 445px;
                 height: 48px;
                 box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
                 background-color: #fbfcfe;
-                @include flex(unset,center,0px);
+                @include flex(unset, center, 0px);
                 padding-left: 27px;
                 border-radius: 24px;
-                margin-bottom:16px;
-                button{
+                margin-bottom: 16px;
+
+                button {
                     width: 173px;
                 }
-                input{
+
+                input {
                     all: unset;
-                    @include flex(unset,center,0px);
+                    @include flex(unset, center, 0px);
                     flex-grow: 1;
-                    padding-right:17px;
+                    padding-right: 17px;
                     margin-bottom: 0;
                 }
             }
@@ -67,37 +79,40 @@
     }
 }
 
-@media only screen and (min-width:992px){
-    .last__section{
+@media only screen and (min-width:992px) {
+    .last__section {
         padding-top: 48px;
-        .container{
+
+        .container {
             width: 100%;
-            @include flex(space-between,center,0px);
-            h2{
+            @include flex(space-between, center, 0px);
+
+            h2 {
                 font-size: 48px;
             }
-            form{
+
+            form {
                 width: 445px;
                 height: 48px;
                 box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
                 background-color: #fbfcfe;
-                @include flex(unset,center,0px);
+                @include flex(unset, center, 0px);
                 margin: 0;
                 border-radius: 24px;
-                margin-bottom:16px;
+                margin-bottom: 16px;
 
-                button{
+                button {
                     width: 173px;
                 }
-                input{
+
+                input {
                     all: unset;
-                    @include flex(unset,center,0px);
+                    @include flex(unset, center, 0px);
                     flex-grow: 1;
-                    padding-right:17px;
+                    padding-right: 17px;
                     margin-bottom: 0;
                 }
             }
         }
     }
 }
-
