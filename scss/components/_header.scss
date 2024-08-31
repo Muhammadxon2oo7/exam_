@@ -1,0 +1,63 @@
+.header{
+    width: 100%;
+    padding-top: 39px;
+    .container{
+        width: 100%;
+        @include flex(space-between,center,0px);
+        .nav__wrapper{
+            display: none;
+        }
+        .hamburger{
+            width: 28px;
+            height: 17px;
+            @include bg('../../img/header/hamburger.svg',cover,center);
+        }
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .header{
+        width: 100%;
+        .container{
+            .logo__wrapper{
+                margin-right: 64px;
+                max-width: 165px;
+            }
+            .hamburger{
+                display: none;
+            }
+            .nav__wrapper{
+                @include flex(space-between,center,0px);
+                flex-grow: 1;
+                ul{
+
+                    @include flex(unset,center,0px);
+                    flex-grow: 1;
+
+                    li{
+                        &:not(:last-child){
+                            margin-right: 40px;
+                        }
+                        a{
+                            @include text($dec,700,15px,$hcolor,center,0px)
+                        }
+                        &:hover{
+                            a{
+                                color: $tcolor;
+                            }
+                        }
+                    }
+                }
+                .nav__btn{
+                    width: 173px;
+                    cursor: pointer;
+                    button{
+                        cursor: pointer;
+                        @include btn(173px,48px,$btn,24px);
+                        @include text($dec,700,15px,$white,center,0px)
+                    }
+                }
+            }
+        }
+    }
+}

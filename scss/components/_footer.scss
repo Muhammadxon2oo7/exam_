@@ -1,0 +1,86 @@
+footer{
+    margin-top: 80px;
+    background-color: #1b262f;
+    padding-top: 41px;
+    padding-bottom: 55px;
+    @include bg('../../img/footer/footer__bg.svg',contain,bottom );
+    .container{
+        .logo__Wrapper{
+            width: 100%;
+            @include flex(center,center,0px);
+            margin-bottom: 40px;
+        }
+        .nav__Wrapper{
+            width: 100%;
+            margin-bottom: 39px;
+            ul{
+                width: 100%;
+                li{
+                    width: 100%;
+                    text-align: center;
+                    a{
+                        @include text($dec,700,15px,$hcolor,center,0px)
+
+                    }
+                    &:not(:last-child){
+                        margin-bottom: 31px;
+                    }
+                    &:hover{
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .social__media{
+            width: 100%;
+            @include flex(center,center,24px);
+            cursor: pointer;
+            
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    footer{
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        @include bg('../../img/footer/tablet__bg.svg',contain,right );
+
+        .container{
+            width: 100%;
+            @include flex(unset,center,0px);
+            align-items: center;
+            .logo__Wrapper{
+                width: auto;
+                height: 100%;
+                @include flex(center,center,0px);
+                margin-bottom: 0;
+                margin-right: 64px;
+            }
+            .nav__Wrapper{
+                all: unset;
+                @include flex(unset,center,0px);
+                flex-grow: 1;
+                ul{
+                    width: auto;
+                    @include flex(unset,center,40px);
+                    height: 100%;
+                    li{
+                        width: auto;
+                        height: 100%;
+                        @include flex(unset,center,0px);
+                        &:not(:last-child){
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .social__media{
+                width: auto;
+            }
+        }
+    }
+}

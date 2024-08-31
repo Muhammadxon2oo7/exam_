@@ -1,0 +1,37 @@
+@mixin flex($jc,$ai,$g){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+@mixin text($font,$w,$fz,$color,$ta,$mb){
+    font-family: $font;
+    font-weight: $w;
+    font-size: $fz;
+    color: $color;
+    margin-bottom: $mb;
+    text-align: $ta;
+}
+@mixin btn($wd,$h,$bg,$br){
+    width: $wd;
+    height: $h;
+    border: none;
+    background-color: $bg;
+    border-radius: $br;
+}
+@mixin bg($image,$bsize,$bposition){
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: $bsize;
+    background-position: $bposition;
+}
+@mixin dec(){
+    font-family:  "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #6c8294;
+}

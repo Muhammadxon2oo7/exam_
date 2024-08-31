@@ -1,0 +1,86 @@
+.third__section{
+    width: 100%;
+    padding-top: 80px;
+    .container{
+        width: 100%;
+        @include flex(center,center,0px);
+        .top__content{
+            width: 327px;
+            height: 289px;
+            @include bg('../../img/third__section/phones.svg',cover,center);
+            margin-bottom: 48px;
+
+        }
+        .bottom__content{
+            width: 100%;
+            h2{
+                width: 100%;
+                @include text($title,400,36px,$tcolor,center,24px);
+            }
+            p{
+                // max-width: 328px;
+                margin:  0 auto; 
+                @include dec()
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    .third__section{
+        width: 100%;
+        padding-top: 100px;
+        .container{
+            width: 100%;
+            .top__content{
+                
+            }
+            .bottom__content{
+                h2{
+                    font-size: 48px;
+                }
+                p{
+                    max-width: 573px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px){
+    .third__section{
+        width: 100%;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        @include bg('../../img/third__section/bg.svg',contain,right);
+        // background-image: url('../../img/third__section/bg.svg');
+        // background-repeat: no-repeat;
+        // background-position: right;
+        // background-size: contain;
+        .container{
+            width: 100%;
+            height: 499px;
+            @include flex(space-between,center,0px);
+            flex-direction: row-reverse;
+            .top__content{
+                width: 50%;
+                height: 100%;
+                @include bg('../../img/third__section/dec__phones.svg',contain,right);
+                background-position: right top;
+
+            }
+            .bottom__content{
+                width: 50%;
+                // height: 100%;
+                // @include flex(unset,center,0px);
+                h2{
+                    width: 100%;
+                    text-align: left;
+                }
+                p{
+                    max-width: 445px;
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
